@@ -3,4 +3,8 @@
     <item name="signin" type="id">signin</item>
     <item name="username" type="id">username</item>
     <item name="password" type="id">password</item>
+    <item name="loginbtn" type="id">loginbtn</item>
+    <item name="forgotpassword" type="id">forgotpassword</item>
+    <item name="signinwith" type="id">signinwith</item>
+    <item name="google" type="id">google</item>
 </resources>
