@@ -104,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.784"
-        app:srcCompat="@drawable/Hotel2" />
+        app:srcCompat="@drawable/hotel2" />
 
     <Button
         android:id="@+id/button2"
