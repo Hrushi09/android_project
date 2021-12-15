@@ -5,12 +5,23 @@
       <map>
         <entry key="..\:/Users/User/StudioProjects/hotelapp/app/src/main/res/layout/cancellationpage.xml" value="0.24259259259259258" />
         <entry key="..\:/Users/User/StudioProjects/hotelapp/app/src/main/res/layout/createaccount.xml" value="0.24259259259259258" />
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+        <entry key="..\:/Users/User/StudioProjects/hotelapp/app/src/main/res/layout/activity_main.xml" value="0.21996615905245348" />
+=======
+>>>>>>> 894cd9cac9148d6a0d5c4df1c2c2bf859932f54b
+>>>>>>> Stashed changes
         <entry key="..\:/Users/User/StudioProjects/hotelapp/app/src/main/res/layout/hoteldetails1.xml" value="0.24259259259259258" />
         <entry key="..\:/Users/User/StudioProjects/hotelapp/app/src/main/res/layout/hotelslist.xml" value="0.24259259259259258" />
         <entry key="..\:/Users/User/StudioProjects/hotelapp/app/src/main/res/layout/resetpassword.xml" value="0.24259259259259258" />
         <entry key="..\:/Users/User/StudioProjects/hotelapp/app/src/main/res/layout/signin.xml" value="0.24259259259259258" />
         <entry key="..\:/Users/hrush/AndroidStudioProjects/Android/android_project/app/src/main/res/layout/hoteldetails1.xml" value="0.1480978260869565" />
+<<<<<<< Updated upstream
         <entry key="..\:/Users/hrush/AndroidStudioProjects/Android/android_project/app/src/main/res/layout/signin.xml" value="0.1" />
+=======
+        <entry key="..\:/Users/hrush/AndroidStudioProjects/Android/android_project/app/src/main/res/layout/signin.xml" value="0.12158054711246201" />
+>>>>>>> Stashed changes
       </map>
     </option>
   </component>
