@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="#00FFC1"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <TextView
@@ -18,7 +18,7 @@
         android:layout_marginBottom="50dp"
         android:gravity="center"
         android:text="Sign in"
-        android:textColor="#9C27B0"
+        android:textColor="#FFFDFF"
         android:textSize="35dp"
         android:textStyle="bold" />
 
@@ -31,7 +31,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#48DCCE"
+        android:background="#00ACC1"
         android:drawablePadding="20dp"
         android:hint="Username"
 
@@ -50,8 +50,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#48DCCE"
-        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:background="#00ACC1"
+
         android:drawablePadding="20dp"
         android:hint="Password"
         android:inputType="textPassword"
@@ -73,7 +73,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="#9C27B0"
+        android:backgroundTint="#43A047"
         android:text="LOGIN"
         android:textColor="#050505"
         android:textSize="16sp"
@@ -111,19 +111,35 @@
 
     <ImageButton
         android:id="@+id/google"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="108dp"
+        android:layout_height="101dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="159dp"
         android:layout_marginTop="609dp"
-        android:layout_marginEnd="174dp"
-        android:layout_marginBottom="60dp"
-        android:backgroundTint="#00FFC1"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="#00ACC1"
         app:srcCompat="@drawable/google"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="294dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="#43A047"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp" />
 
 
 </RelativeLayout>
