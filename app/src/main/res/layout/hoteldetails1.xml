@@ -4,169 +4,314 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00FFC1">
+    android:background="@drawable/background">
 
     <TextView
-        android:id="@+id/bookings"
-        android:layout_width="160dp"
-        android:layout_height="45dp"
-        android:text="Bookings"
+        android:id="@+id/hotelplaza"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Hotel Plaza"
         android:textAlignment="center"
-        android:textColor="#131313"
-        android:textSize="34sp"
-        android:textStyle="bold|italic"
+        android:textColor="#F1ECEC"
+        android:textSize="28sp"
+        android:textStyle="normal|bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
-
-    <ImageButton
-        android:id="@+id/filter"
-        android:layout_width="68dp"
-        android:layout_height="71dp"
-        android:backgroundTint="#00FFC1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.002"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075"
-        app:srcCompat="@drawable/filter"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-
-    <ImageButton
-        android:id="@+id/sort"
-        android:layout_width="70dp"
-        android:layout_height="59dp"
-        android:backgroundTint="#00FFC1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074"
-        app:srcCompat="@drawable/sort"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintVertical_bias="0.045" />
 
     <ImageView
         android:id="@+id/hotel1"
-        android:layout_width="401dp"
-        android:layout_height="179dp"
+        android:layout_width="395dp"
+        android:layout_height="198dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234"
+        app:layout_constraintVertical_bias="0.191"
         app:srcCompat="@drawable/hotel1" />
 
-
     <Button
-        android:id="@+id/details1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#9C27B0"
-        android:text="Details"
-        android:textColor="#0E0E0E"
-        android:textStyle="bold"
+        android:id="@+id/reserve"
+        android:layout_width="99dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#43A047"
+        android:fontFamily="sans-serif-black"
+        android:text="Reserve"
+        android:textColor="#070707"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintHorizontal_bias="0.935"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.512" />
+        app:layout_constraintVertical_bias="0.986" />
 
     <TextView
-        android:id="@+id/price"
-        android:layout_width="150dp"
-        android:layout_height="24dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Price : 100$"
-        android:textColor="#090909"
+        android:id="@+id/textView2"
+        android:layout_width="127dp"
+        android:layout_height="37dp"
+        android:fontFamily="sans-serif"
+        android:text="per night"
+        android:textColor="#101010"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.461" />
+        app:layout_constraintVertical_bias="0.515" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="121dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="CA $100"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="290dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="288dp"
+        android:fontFamily="sans-serif"
+        android:text="CA $130 total Includes taxes,fees"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageView
-        android:id="@+id/hotel2"
-        android:layout_width="384dp"
-        android:layout_height="207dp"
-        android:layout_marginEnd="12dp"
+        android:id="@+id/imageView2"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="204dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/wifi" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="48dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839"
+        app:srcCompat="@drawable/parking" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="236dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784"
-        app:srcCompat="@drawable/hotel2" />
+        app:layout_constraintVertical_bias="0.677"
+        app:srcCompat="@drawable/food" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#9C27B0"
-        android:text="details"
-        android:textColor="#0E0E0E"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67"
+        app:srcCompat="@drawable/restaurant" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:srcCompat="@drawable/laundry" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/smoke" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="41dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673"
+        app:srcCompat="@drawable/bar" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="53dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="172dp"
+        android:text="Free Wifi"
+        android:textAlignment="center"
+        android:textColor="#131313"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="141dp"
-        android:layout_height="32dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Price : 200$"
-        android:textColor="#0E0E0E"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.907" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="155dp"
-        android:layout_height="27dp"
-        android:layout_marginBottom="352dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Hotel Plaza"
-        android:textColor="#131313"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent" />
 
-
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="137dp"
-        android:layout_height="28dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="LakeView Chalet"
-        android:textColor="#121212"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
+        android:id="@+id/textView10"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="64dp"
+        android:text="Free Parking"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="53dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="236dp"
+        android:text="Free brkfst"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="59dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="228dp"
+        android:text="Laundry"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="53dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="128dp"
+        android:text="Restaurant"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="132dp"
+        android:text="Smoke free"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="Bar"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/reserve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="51dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/hotelplaza"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.947" />
+        app:srcCompat="@drawable/signout" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toEndOf="@+id/hotelplaza"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/share" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#43A047"
+        android:text="Back"
+        android:textColor="#101010"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reserve"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.562" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
