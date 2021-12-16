@@ -1,4 +1,4 @@
-package com.example.hra;
+package com.example.hotelaccount;
 
 import android.content.Intent;
 import android.os.Bundle;
