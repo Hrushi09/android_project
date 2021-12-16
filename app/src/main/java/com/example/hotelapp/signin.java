@@ -1,4 +1,4 @@
-package com.example.hra;
+package com.example.hotelapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.example.hra.R;
 
 import org.w3c.dom.Text;
 
@@ -41,7 +43,7 @@ public class signin  extends AppCompatActivity{
        ForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent( signin.this, ResetPassword.class));
+                startActivity(new Intent( signin.this, com.example.hotelapp.ResetPassword.class));
                 finish();
             }
         });

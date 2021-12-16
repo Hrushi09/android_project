@@ -1,4 +1,4 @@
-package com.example.hra;
+package com.example.hotelapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.hra.R;
 
 public class ResetPassword extends AppCompatActivity {
 
