@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "748291709773",
+    "project_id": "rentogo-a37bd",
+    "storage_bucket": "rentogo-a37bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748291709773:android:9498cbb93ed9a8f13b3504",
+        "android_client_info": {
+          "package_name": "com.example.hra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748291709773-qjev6vlhbbk21gmunj124a6dc23oetih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZvAPFtaT4b7dcKUqeytMpsQoxJ7HfY9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748291709773-qjev6vlhbbk21gmunj124a6dc23oetih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

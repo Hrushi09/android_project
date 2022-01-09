@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hra">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HRA">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name = ".Userloginactivity"/>
+        <activity android:name = ".Createaccount"/>
+        <activity android:name = ".Hotelslist"/>
+        <activity android:name = ".ResetPassword"/>
+        <activity android:name = ".hotel1details"/>
+        <activity android:name = ".thankyou"/>
+        <activity android:name = ".Cancellationpage"/>
+        <activity android:name = ".Newpassword"/>
+    </application>
+
+</manifest>
