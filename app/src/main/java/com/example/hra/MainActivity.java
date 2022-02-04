@@ -18,15 +18,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        getSupportActionBar().setTitle("RentoGo");
+        getSupportActionBar().setTitle("RentoGo");
+
         Sign =(Button) findViewById(R.id.signtxt);
         Createaccount = (Button) findViewById(R.id.Createaccount);
 
         Sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent( MainActivity.this, Userloginactivity.class));
-                finish();
+                Intent i = new Intent(MainActivity.this, Userloginactivity.class);
+                startActivity(i);
 
 
             }
@@ -34,8 +35,10 @@ public class MainActivity extends AppCompatActivity {
         Createaccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Createaccount.class));
-                finish();
+                Intent i = new Intent(MainActivity.this,Createaccount.class);
+                startActivity(i);
+
+
             }
         });
     }

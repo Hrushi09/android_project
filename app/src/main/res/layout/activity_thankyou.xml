@@ -10,45 +10,32 @@
         android:id="@+id/textView"
         android:layout_width="394dp"
         android:layout_height="78dp"
+        android:layout_marginTop="168dp"
         android:text="Your Hotel is Reserved.  "
         android:textAlignment="center"
         android:textColor="#FDFCFC"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="375dp"
         android:layout_height="65dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="336dp"
         android:text="Thankyou"
         android:textAlignment="center"
         android:textColor="#FBF8F8"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.255" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="106dp"
-        android:layout_height="57dp"
-        android:backgroundTint="#E53935"
-        android:text="Quit"
-        android:textAlignment="center"
-        android:textColor="#F6F4F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

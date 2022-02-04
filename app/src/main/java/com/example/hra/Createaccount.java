@@ -7,9 +7,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.example.hra.models.Accounts;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import androidx.annotation.NonNull;
@@ -28,11 +29,13 @@ public class Createaccount  extends AppCompatActivity implements View.OnClickLis
     private FirebaseFirestore database;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createaccount);
-//        getSupportActionBar().setTitle("RentoGo");
+        getSupportActionBar().setTitle("RentoGo");
+
 
         Createaccount = (TextView) findViewById(R.id.Createaccount);
         Username = (EditText) findViewById(R.id.username);
@@ -43,6 +46,7 @@ public class Createaccount  extends AppCompatActivity implements View.OnClickLis
 
         Create.setOnClickListener(this);
         database=FirebaseFirestore.getInstance();
+
     }
 
 
@@ -93,10 +97,12 @@ public class Createaccount  extends AppCompatActivity implements View.OnClickLis
         }
     }
 
+
+
     public void send(String name,String email,String password){
         SimpleDateFormat id_format = new SimpleDateFormat("yyMMddHHmmssSS");
         String id = id_format.format(new Date());
-        Accounts user=new Accounts(name, password, email);
+        Accounts user=new Accounts(name, password, email,id);
         database.collection("Accounts")
                 .document(String.valueOf(id))
                 .set(user)

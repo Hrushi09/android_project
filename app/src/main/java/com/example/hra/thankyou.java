@@ -18,8 +18,6 @@ public class thankyou extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thankyou);
-        getSupportActionBar().setTitle("RentoGo");
-
 
     }
     @Override
@@ -38,15 +36,6 @@ public class thankyou extends AppCompatActivity {
             case R.id.item2:
                 Intent logout_intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(logout_intent);
-                break;
-
-            case R.id.item3:
-                ApplicationInfo api = getApplicationContext().getApplicationInfo();
-                Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("text/plain");
-                intent.putExtra(Intent.EXTRA_SUBJECT, "CHECK out this cool application");
-                intent.putExtra(Intent.EXTRA_TEXT,"we are sharing information about our hotel plaza. for more details please visit our app RENTOGO and make your reservation ");
-                startActivity(Intent.createChooser(intent, "shareVia"));
                 break;
 
         }

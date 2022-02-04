@@ -7,13 +7,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.example.hra.models.Accounts;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -40,29 +41,32 @@ public class Userloginactivity extends AppCompatActivity implements View.OnClick
     private EditText Username;
     private EditText Password;
     private TextView ForgotPassword;
-    private ImageButton Google;
+    //private ImageButton Google;
     private GoogleSignInClient mGoogleSignInClient;
     private  String TAG = "Userloginactivity";
     private int RC_SIGN_IN = 1;
     private Button btnSignOut;
+    SignInButton signinbutton;
+
 
     FirebaseAuth mAuth;
     FirebaseFirestore database;
 
     int login_flag=0;
-  SharedPreferences sharedPreferences;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
-//        getSupportActionBar().setTitle("RentoGo");
+        getSupportActionBar().setTitle("RentoGo");
+
 
         login = (Button) findViewById(R.id.loginbtn);
         Username = (EditText) findViewById(R.id.username);
         Password = (EditText) findViewById(R.id.password);
         ForgotPassword = (TextView) findViewById(R.id.forgotpassword);
-       Google = (ImageButton) findViewById(R.id.googlebtn);
+        signinbutton = (SignInButton) findViewById(R.id.googlebtn);
         btnSignOut = findViewById(R.id.signoutggl);
 
         mAuth = FirebaseAuth.getInstance();
@@ -80,10 +84,15 @@ public class Userloginactivity extends AppCompatActivity implements View.OnClick
                 .build();
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-        Google.setOnClickListener(new View.OnClickListener() {
+        signinbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                signIn();
+                switch (view.getId()){
+                    case R.id.googlebtn:
+                        signIn();
+                        break;
+
+                }
             }
         });
 
@@ -177,10 +186,10 @@ public class Userloginactivity extends AppCompatActivity implements View.OnClick
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == RC_SIGN_IN){
-            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+           Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+            handleSignInResult(task);
             Intent i = new Intent(Userloginactivity.this,Hotelslist.class);
             startActivity(i);
-            handleSignInResult(task);
         }
     }
 
@@ -188,15 +197,14 @@ public class Userloginactivity extends AppCompatActivity implements View.OnClick
         try{
 
             GoogleSignInAccount acc = completedTask.getResult(ApiException.class);
-            Toast.makeText(Userloginactivity.this,"1Signed In Successfully",Toast.LENGTH_SHORT).show();
-
-            FirebaseGoogleAuth(acc);
-
+            Toast.makeText(Userloginactivity.this,"Signed In Successfully",Toast.LENGTH_SHORT).show();
 
         }
         catch (ApiException e){
-            Toast.makeText(Userloginactivity.this,"3Sign In Failed",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Userloginactivity.this,"Sign In Failed",Toast.LENGTH_SHORT).show();
             FirebaseGoogleAuth(null);
+//            Log.w("Error", "signInResult:failed code=" + e.getStatusCode());
+
         }
     }
 
@@ -208,13 +216,10 @@ public class Userloginactivity extends AppCompatActivity implements View.OnClick
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        Toast.makeText(Userloginactivity.this, "2Successful", Toast.LENGTH_SHORT).show();
-                        FirebaseUser user = mAuth.getCurrentUser();
-                        if(user != null){
+                        Toast.makeText(Userloginactivity.this, "Successful", Toast.LENGTH_SHORT).show();
+                                              FirebaseUser user = mAuth.getCurrentUser();
 
-                        }
                         updateUI(user);
-
 
 
                     }else {
@@ -244,4 +249,3 @@ public class Userloginactivity extends AppCompatActivity implements View.OnClick
 
     }
 }
-

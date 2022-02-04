@@ -3,27 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/activity_cancellationpage.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/activity_createaccount.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/activity_hotel1details.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/activity_hotelslist.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/activity_newpassword.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/activity_resetpassword.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/activity_signin.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/activity_thankyou.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/cancellationpage.xml" value="0.2" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/createaccount.xml" value="0.2" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/homepage.xml" value="0.2" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/hotel1details.xml" value="0.2" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/hotelslist.xml" value="0.2" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/resetpassword.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/signin.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/User/Desktop/RentoGo/RentoGo/app/src/main/res/layout/thankyou.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/RentoGo/app/src/main/res/layout/activity_bookings.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/RentoGo/app/src/main/res/layout/activity_hotel1details.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/User/Desktop/RentoGo/app/src/main/res/layout/activity_hotel3details.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/User/Desktop/RentoGo/app/src/main/res/layout/activity_hotel4details.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/User/Desktop/RentoGo/app/src/main/res/layout/activity_hotel5details.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/User/Desktop/RentoGo/app/src/main/res/layout/activity_hotelslist.xml" value="0.264" />
+        <entry key="..\:/Users/User/Desktop/RentoGo/app/src/main/res/layout/activity_signin.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/activity_bookings.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_cancellationpage.xml" value="0.14479166666666668" />
+        <entry key="app/src/main/res/layout/activity_hotel1details.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_hotelslist.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_thankyou.xml" value="0.14479166666666668" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.28072916666666664" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

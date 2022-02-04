@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/lakeview"
+        android:layout_width="189dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Lake View"
+        android:textAlignment="center"
+        android:textColor="#F1ECEC"
+        android:textSize="28sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/bf2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/reserve2"
+        android:layout_width="100dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#43A047"
+        android:fontFamily="sans-serif-black"
+        android:text="Reserve"
+        android:textColor="#070707"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.932"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <ImageView
+        android:id="@+id/bfi2"
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/bf2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/food" />
+
+    <ImageView
+        android:id="@+id/lndryi2"
+        android:layout_width="41dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/lndry2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smki2"
+        app:srcCompat="@drawable/laundry" />
+
+    <ImageView
+        android:id="@+id/prkngi2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="134dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lndryi2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/parking" />
+
+    <TextView
+        android:id="@+id/bf2"
+        android:layout_width="168dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="128dp"
+        android:text="Breakfast "
+        android:textSize="16sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bfi1"
+        app:layout_constraintTop_toBottomOf="@+id/lakeview" />
+
+    <TextView
+        android:id="@+id/lndry2"
+        android:layout_width="173dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="134dp"
+        android:text="Laundry"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lndryi2"
+        app:layout_constraintTop_toBottomOf="@+id/smkng2" />
+
+    <TextView
+        android:id="@+id/prkng2"
+        android:layout_width="171dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="128dp"
+        android:text="Parking"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/prkngi1"
+        app:layout_constraintTop_toBottomOf="@+id/lndry2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="350dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tajj" />
+
+    <ImageView
+        android:id="@+id/smki2"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toStartOf="@+id/smkng2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bfi2"
+        app:srcCompat="@drawable/smoke" />
+
+    <TextView
+        android:id="@+id/smkng2"
+        android:layout_width="166dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="42dp"
+        android:text="No Smoking"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/lndry2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bf2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

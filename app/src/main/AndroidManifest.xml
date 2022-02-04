@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hra">
-
+<uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
         android:theme="@style/Theme.HRA">
         <activity
             android:name=".MainActivity"
@@ -18,14 +19,43 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name = ".Userloginactivity"/>
-        <activity android:name = ".Createaccount"/>
-        <activity android:name = ".Hotelslist"/>
-        <activity android:name = ".ResetPassword"/>
-        <activity android:name = ".hotel1details"/>
-        <activity android:name = ".thankyou"/>
-        <activity android:name = ".Cancellationpage"/>
-        <activity android:name = ".Newpassword"/>
+        <activity android:name = ".Userloginactivity"
+            android:label="MainActivity"/>
+
+        <activity android:name = ".Createaccount"
+            android:label="MainActivity"/>
+
+        <activity android:name = ".Hotelslist"
+            android:label="Userloginactivity"/>
+
+        <activity android:name = ".ResetPassword"
+            android:label="Userloginactivity"/>
+
+        <activity android:name = ".Hotel1details"
+            android:label = "Hotelslist"/>
+
+        <activity android:name = ".thankyou"
+            android:label = "Hotelslist"/>
+
+        <activity android:name = ".Cancellationpage"
+            android:label = "Hotelslist"/>
+
+        <activity android:name = ".Hotel2details"
+            android:label = "Hotelslist"/>
+
+        <activity android:name = ".Hotel3details"
+            android:label = "Hotelslist"/>
+
+        <activity android:name = ".Hotel4details"
+            android:label = "Hotelslist"/>
+
+        <activity android:name = ".Hotel5details"
+            android:label = "Hotelslist"/>
+
+        <activity android:name = ".Bookings"
+            android:label = "Hotelslist"/>
+
+
     </application>
 
 </manifest>

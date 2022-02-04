@@ -17,7 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
             super.onCreate(savedInstanceState);
 
             setContentView(R.layout.activity_cancellationpage);
-//            getSupportActionBar().setTitle("RentoGo");
+            getSupportActionBar().setTitle("RentoGo");
+           
 
 
            Continue = (Button) findViewById(R.id.button3);
@@ -26,8 +27,8 @@ import androidx.appcompat.app.AppCompatActivity;
             Continue.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent( Cancellationpage.this, Hotelslist.class));
-                    finish();
+                    Intent i = new Intent(Cancellationpage.this, Hotelslist.class);
+                    startActivity(i);
                 }
             });
         }

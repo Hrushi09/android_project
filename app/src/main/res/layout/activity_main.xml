@@ -38,44 +38,46 @@
 
     <HorizontalScrollView
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Createaccount"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signtxt"
         tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_width="2000dp"
+            android:layout_height="match_parent"
+            android:minWidth="2000dp">
 
             <ImageView
-                android:id="@+id/imageView21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageView24"
+                android:layout_width="300dp"
+                android:layout_height="104dp"
                 android:layout_weight="1"
-                android:maxWidth="300dp"
-                android:maxHeight="300dp"
-                app:srcCompat="@drawable/news1" />
+                app:srcCompat="@drawable/news4" />
 
             <ImageView
                 android:id="@+id/imageView22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="104dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/news2" />
 
             <ImageView
-                android:id="@+id/imageView23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageView21"
+                android:layout_width="300dp"
+                android:layout_height="104dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/news3" />
+                android:maxWidth="50dp"
+                android:maxHeight="300dp"
+                app:srcCompat="@drawable/news1" />
 
             <ImageView
-                android:id="@+id/imageView24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageView23"
+                android:layout_width="300dp"
+                android:layout_height="104dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/news4" />
+                app:srcCompat="@drawable/news3" />
         </LinearLayout>
     </HorizontalScrollView>
 
